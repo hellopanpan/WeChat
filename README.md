@@ -1,7 +1,8 @@
 # WeChat
 技术：
 ---
-HTML ，CSS3，JQuery，bootstrap，Ajax，Node.js，Mongodb，Socket.IO
+- HTML ，CSS3，JQuery，bootstrap，Ajax
+- Node.js，Mongodb，Socket.IO
 ###
 项目内容：
 ---
