@@ -7,7 +7,7 @@
     "watch": "server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "panpan",
+  "author": "xpanpan",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
