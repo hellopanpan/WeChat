@@ -1,15 +1,17 @@
 {
-  "name": "wechat",
-  "description": "wechat",
+  "name": "secretchat",
   "version": "1.0.0",
-  "author": "panpan",
-  "private": true,
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    
+    "watch": "server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
+  "author": "panpan",
+  "license": "ISC",
+  "dependencies": {
     "express": "^4.13.4",
-    "mongoose": "^4.4.10",
-    "socket.io": "^1.4.5",
+    "mongodb": "^1.4.12",
+    "socket.io": "^1.4.5"
   }
 }
