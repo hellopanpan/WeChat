@@ -2,15 +2,18 @@ var http=require("http");
 var express=require("express");
 var app=express();
 var server=http.createServer(app);
-var io=require("socket.io").listen(server);
+var io=require("socket.io")(server, {transport:'polling'});
 var users=[];
-app.use("/",express.static(__dirname+"/xpanpan10"));
 server.listen(3030);
+// 静态资源服务器
+app.use("/",express.static(__dirname+"/xpanpan10"));
 app.all("*", (req, res, next) => {
 	console.log('welcome')
 	next()
 })
+
 io.on("connection",function(socket){
+	console.log('connentccce')
 	socket.on("login",function(name){
 		socket.userIndex=users.length;//进入前users的的length
 		socket.name=name;

@@ -48,7 +48,7 @@ console.log('wel api')
 //app.use("/",express.static(__dirname+"/xpanpan9"));
 server.listen(3000);
 server.on("request",function(req,res){
-
+	res.setHeader("Access-Control-Allow-Origin", "*"); 
 	var urlStr=url.parse(req.url);
 	console.log(req.url)
 	switch(urlStr.pathname){
