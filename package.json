@@ -6,14 +6,13 @@
   "scripts": {
     "watch": "server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node serve.js && npm run req.js"
+    "dev": "node serve.js && node req.js"
   },
   "author": "xpanpan",
   "license": "ISC",
   "dependencies": {
-    "bson": "^1.0.4",
     "express": "^4.13.4",
-    "mongodb": "^1.4.12",
+    "mongoose": "^4.12.1",
     "socket.io": "^1.4.5"
   }
 }

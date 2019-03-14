@@ -4,11 +4,14 @@ var app=express();
 var server=http.createServer(app);
 var io=require("socket.io").listen(server);
 var users=[];
-app.use("/",express.static(__dirname+"/xpanpan9"));
+app.use("/",express.static(__dirname+"/xpanpan10"));
 server.listen(3030);
+app.all("*", (req, res, next) => {
+	console.log('welcome')
+	next()
+})
 io.on("connection",function(socket){
 	socket.on("login",function(name){
-		
 		socket.userIndex=users.length;//进入前users的的length
 		socket.name=name;
 		users.push(name);
