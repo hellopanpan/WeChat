@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "server.js",
+    "server": "node server.js",
+    "dev": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node serve.js && node req.js"
+    "start": "npm run dev & npm run server"
   },
   "author": "xpanpan",
   "license": "ISC",
