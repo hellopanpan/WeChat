@@ -1,9 +1,9 @@
 $(function(){
 	$("#content").height($(window).height()-100);
-	$("#historyMsg").height($(window).height()-200);
+	$("#historyMsg").height($(window).height()-260);
 	$(window).resize(function(){
 		$("#content").height($(window).height()-100);
-		$("#historyMsg").height($(window).height()-200);		
+		$("#historyMsg").height($(window).height()-260);		
 	});
 	$("#regSubmit").click(function(){
 		$("#regForm").submit();
