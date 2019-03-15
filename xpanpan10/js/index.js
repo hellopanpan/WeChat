@@ -17,7 +17,7 @@ $(function(){
 			var serverUri = "http://localhost:3030"
 			var that=this;
 			// this.socket = io( serverUri, {'transports': ['websocket', 'polling']});
-			this.socket=io.connect("http://localhost:3030",'');
+			this.socket=io.connect("http://localhost:3030");
 			this.socket.on("connect",function(){
 				console.log("is connect");
 			})
@@ -168,7 +168,7 @@ $(function(){
 				required:true,
 				minlength:3,
 				remote:{
-					url:"http://localhost:3000/user",
+					url:"http://localhost:3080/user",
 					type:"POST",
 				}
 			},
@@ -210,7 +210,7 @@ $(function(){
 		//提交注册信息表
 		submitHandler:function(form){
 			$(form).ajaxSubmit({
-				url:"http://localhost:3000/reg",
+				url:"http://localhost:3080/reg",
 				type:"POST",
 				beforeSubmit:function(){
 					
@@ -267,7 +267,7 @@ $(function(){
 		//提交登录信息表
 		submitHandler:function(form){
 			$(form).ajaxSubmit({
-				url:"http://localhost:3000/login",
+				url:"http://localhost:3080/login",
 				type:"POST",
 				beforeSubmit:function(){
 					

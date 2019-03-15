@@ -1521,7 +1521,7 @@ var io = ('undefined' === typeof module ? {} : module.exports);
       , 'reconnect': true
       , 'reconnection delay': 500
       , 'reconnection limit': Infinity
-      , 'reopen delay': 3000
+      , 'reopen delay': 3080
       , 'max reconnection attempts': 10
       , 'sync disconnect on unload': false
       , 'auto connect': true

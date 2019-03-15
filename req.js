@@ -46,7 +46,7 @@ var server=http.createServer();
 var users=[];
 console.log('wel api')
 //app.use("/",express.static(__dirname+"/xpanpan9"));
-server.listen(3000);
+server.listen(3080);
 server.on("request",function(req,res){
 	res.setHeader("Access-Control-Allow-Origin", "*"); 
 	var urlStr=url.parse(req.url);
