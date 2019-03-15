@@ -1,4 +1,6 @@
 $(function(){
+	var serverUri = "/wechartserver"
+	// var serverUri = "http://localhost:3080" 更换为服务代理
 	$("#content").height($(window).height()-100);
 	$("#historyMsg").height($(window).height()-260);
 	$(window).resize(function(){
@@ -14,7 +16,6 @@ $(function(){
 	//socket主体
 	var panpan={
 		init:function(){
-			var serverUri = "http://localhost:3080"
 			var that=this;
 			// this.socket = io( serverUri, {'transports': ['websocket', 'polling']});
 			this.socket=io.connect(serverUri);
@@ -168,7 +169,7 @@ $(function(){
 				required:true,
 				minlength:3,
 				remote:{
-					url:"http://localhost:3080/user",
+					url: serverUri + "/user",
 					type:"POST",
 				}
 			},
@@ -210,7 +211,7 @@ $(function(){
 		//提交注册信息表
 		submitHandler:function(form){
 			$(form).ajaxSubmit({
-				url:"http://localhost:3080/reg",
+				url: serverUri + "/reg",
 				type:"POST",
 				beforeSubmit:function(){
 					
@@ -267,8 +268,8 @@ $(function(){
 		//提交登录信息表
 		submitHandler:function(form){
 			$(form).ajaxSubmit({
-				url:"http://localhost:3080/login",
-				type:"POST",
+				url: serverUri+ "/login",
+				type: "POST",
 				beforeSubmit:function(){
 					
 				},
