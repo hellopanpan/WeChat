@@ -9,4 +9,5 @@ app.all("*", (req, res, next) => {
 	next()
 })
 app.use("/",express.static(__dirname+"/xpanpan10"));
+// 端口 3030
 

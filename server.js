@@ -3,6 +3,8 @@ var express=require("express");
 var fs=require("fs");
 var url=require("url");
 var querystring=require("querystring");
+//  端口3080
+
 // 映入mongoose
 var mongoose = require("mongoose");
 DB_URL = 'mongodb://localhost:27017/xpanpanwechart';
