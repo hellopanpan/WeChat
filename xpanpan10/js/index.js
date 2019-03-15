@@ -14,10 +14,10 @@ $(function(){
 	//socket主体
 	var panpan={
 		init:function(){
-			var serverUri = "http://localhost:3030"
+			var serverUri = "http://localhost:3080"
 			var that=this;
 			// this.socket = io( serverUri, {'transports': ['websocket', 'polling']});
-			this.socket=io.connect("http://localhost:3030");
+			this.socket=io.connect(serverUri);
 			this.socket.on("connect",function(){
 				console.log("is connect");
 			})
