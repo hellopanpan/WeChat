@@ -134,7 +134,7 @@ $(function(){
 			var emojiIndex='';
 			while(match=reg.exec(result)){
 				emojiIndex=match[0].slice(6,-1);
-				result=result.replace(match[0],'<img src="img/emoji/'+emojiIndex+'.GIF">');
+				result=result.replace(match[0],'<img src="./wechat/img/emoji/'+emojiIndex+'.GIF">');
 			}
 			return result;
 		},
