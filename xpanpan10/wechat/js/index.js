@@ -1,6 +1,6 @@
 $(function(){
 	var serverUri = "/wechartserver"
-	var serverUri2 = "http://xpanpan.com/wechartserver"
+	var serverUri2 = "http://xpanpan.com:3080"
 	// var serverUri = "http://localhost:3080" 更换为服务代理
 	$("#content").height($(window).height()-100);
 	$("#historyMsg").height($(window).height()-260);
