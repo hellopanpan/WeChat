@@ -7,7 +7,7 @@ server.listen(3030);
 app.use("/wechat",express.static(__dirname+"/xpanpan10"));
 app.use('/', (req, res, next) => {
 	console.log('welcome-1111')
-	res.redirect('/wechat')
+	// res.redirect('/wechat')
 	next()
 })
 app.all("*", (req, res, next) => {
