@@ -1,5 +1,6 @@
 $(function(){
 	var serverUri = "/wechartserver"
+	var serverUri2 = "http://xpanpan.com/wechartserver"
 	// var serverUri = "http://localhost:3080" 更换为服务代理
 	$("#content").height($(window).height()-100);
 	$("#historyMsg").height($(window).height()-260);
@@ -18,7 +19,7 @@ $(function(){
 		init:function(){
 			var that=this;
 			// this.socket = io( serverUri, {'transports': ['websocket', 'polling']});
-			this.socket=io.connect(serverUri);
+			this.socket=io.connect(serverUri2);
 			this.socket.on("connect",function(){
 				console.log("is connect");
 			})
