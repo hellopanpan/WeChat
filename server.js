@@ -52,9 +52,12 @@ server.listen(3080);
 server.on("request",function(req,res){
 	res.setHeader("Access-Control-Allow-Origin", "*"); 
 	var urlStr=url.parse(req.url);
-	console.log(req.url)
-	switch(urlStr.pathname){
-		case "/user":
+	var urlArr = urlStr.pathname.split('/')
+	var finalPath = urlArr[urlArr.length -1]
+	console.log(urlStr)
+	console.log(finalPath)
+	switch(finalPath){
+		case "user":
 			var str='';
 			req.on("data",function(chunk){
 				str+=chunk;
@@ -103,7 +106,7 @@ server.on("request",function(req,res){
 				// });
 			});
 			break;
-		case "/reg":
+		case "reg":
 			var str='';
 			req.on("data",function(chunk){
 				str+=chunk;
@@ -150,7 +153,7 @@ server.on("request",function(req,res){
 				// });
 			});
 			break;
-		case "/login":
+		case "login":
 			var str='';
 			req.on("data",function(chunk){
 				str+=chunk;
