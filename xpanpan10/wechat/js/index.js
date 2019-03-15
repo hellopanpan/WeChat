@@ -123,7 +123,7 @@ $(function(){
 		showemojiFn:function(){
 			var str='';
 			for(var i=0;i<20;i++){
-				str+='<img src="/wechat/img/emoji/'+(i+1)+'.gif">'
+				str+='<img src="./wechat/img/emoji/'+(i+1)+'.gif">'
 			};
 			$("#emoji").html(str);
 		},
