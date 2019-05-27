@@ -1,4 +1,12 @@
 # WeChat
+run：
+---
+- 静态资源服务器：
+- npm run app.js
+- 启动socket 和mongodb：
+- npm run server.js
+
+node run 
 技术：
 ---
 - HTML ，CSS3，JQuery，bootstrap，Ajax
