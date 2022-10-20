@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
-    "mongoose": "^4.12.1",
+    "mongoose": "^4.13.21",
     "socket.io": "^1.4.5",
     "socket.io-client": "^2.2.0"
   }
